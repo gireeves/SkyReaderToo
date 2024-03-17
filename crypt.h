@@ -13,11 +13,11 @@
 class Crypt {
 	
 public:
-int IsAccessControlBlock(unsigned int);
-void EncryptTagBlock(unsigned char*, unsigned int , unsigned char const* );
-void DecryptTagBlock(unsigned char*, unsigned int , unsigned char const* );
-void EncryptBuffer(unsigned char* );
-void DecryptBuffer(unsigned char* );
+	int IsAccessControlBlock(unsigned int);
+	void EncryptTagBlock(unsigned char*, unsigned int , unsigned char const* );
+	void DecryptTagBlock(unsigned char*, unsigned int , unsigned char const* );
+	void EncryptBuffer(unsigned char* );
+	void DecryptBuffer(unsigned char* );
 	
 private:
 	int ShouldEncryptBlock(unsigned int );
